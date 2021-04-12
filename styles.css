@@ -1,0 +1,61 @@
+header {
+    background-color: aliceblue;
+}
+
+#title {
+    background-color: lavender;
+}
+
+#mainart {
+    background-color: lemonchiffon;
+}
+
+.mainarticles {
+    background-color: lightblue;
+}
+
+.tickets {
+    background-color: lightcoral;
+}
+
+#popular {
+    background-color: lightgreen;
+}
+
+#latest {
+    background-color: lightpink;
+}
+
+#explore {
+    background-color: lightsalmon;
+}
+
+#newsletter{
+    background-color: lightseagreen;
+}
+
+#watch {
+    background-color: lightskyblue;
+}
+
+#work {
+    background-color: mediumaquamarine;
+}
+
+@media (max-width: 480px) {
+    .text {
+      font-size: 16px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .text {
+      font-size: 20px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .text {
+      font-size: 26px;
+    }
+  }
