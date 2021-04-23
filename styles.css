@@ -114,7 +114,7 @@ footer > div > h1 {
     font-family: 'Wendy One', sans-serif;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 737px) {
     header {
         height: 50px;
     }
@@ -229,11 +229,23 @@ footer > div > h1 {
     }
 
     h1 {
-        font-size: 30px;
+        font-size: 3em;
     }
 
     h2 {
-        font-size: 15px;
+        font-size: 2em;
+    }
+
+    #title > h1 {
+        font-size: 10em;
+        margin: 0;
+    }
+
+    #title > h2 {
+        font-size: 1.5em;
+        color: rgb(88, 88, 88);
+        align-self: center;
+        margin-top: 0;
     }
 
     .menuitem1 {
@@ -261,6 +273,13 @@ footer > div > h1 {
          grid-column: 1 / -1;
      }
 
+     .art1 > p {
+        font-size: 1.7em;
+        font-weight: 700;
+        padding: 20px;
+        margin-top: 400px;
+     }
+
      .art2 {
          grid-row: 3 / 4;
          grid-column: 1 / 2;
@@ -271,21 +290,62 @@ footer > div > h1 {
         grid-column: 1 / 2;
     }
 
+    .arttxt {
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 20px;
+        margin-top: 100px;
+    }
+
     .art4 {
         grid-row: 4 / 5;
         grid-column: 2 / 3;
     }
 
+    .art4 > p {
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 20px;
+        margin-top: 100px;
+    }
+
     .tickets {
         position: absolute;
-        top: 690px;
+        top: 791px;
         left: 50.5%;
-        width: 39.2%;
+        width: 39.5%;
         height: 250px;
     }
 
-    #popular {
+    .tickets > p {
+        font-size: 2em;
+        font-weight: 700;
+        padding: 20px;
+        margin-top: 20px;
+    }
+
+    #popcontainer {
+        padding-bottom: 100px;
+    }
+
+    #popular > h3 {
+        font-size: 2.3em;
+        color: rgb(88, 88, 88);
+        padding-top: 30px;
+        font-weight: 600;
         text-align: center;
+    }
+
+    #popcontainer > h4 {
+        margin-left: 100px;
+        font-weight: 600;
+        font-size: 1.3em;
+    }
+
+    span {
+        color: rgb(173, 10, 138);
+        font-size: 2em;
+        padding-right: 20px;
     }
 
     #storycontainer {
@@ -300,6 +360,14 @@ footer > div > h1 {
         margin: 10px;
     }
 
+    .stories > p {
+        font-size: 1.5em;
+        font-weight: 600;
+        position: relative;
+        top: 160px;
+        text-align: center;
+    }
+
     #explorecontainer {
         display: flex;
         justify-content: center;
@@ -311,6 +379,12 @@ footer > div > h1 {
         margin: 0 10px;
     }
 
+    .exploreitem > p {
+        margin-top: 190px;
+        font-size: 1.4em;
+        font-weight: 600;
+    }
+
     .weg {
         display: none;
     }
@@ -320,10 +394,27 @@ footer > div > h1 {
         text-align: center;
     }
 
+    #newsletter > h1 {
+        font-size: 2.5em;
+        padding-top: 80px;
+    }
+
+    #newsletter > p {
+        font-size: 1.3em;
+    }
+
+    input {
+        width: 60%;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 50px;
+    }
+
     #watch {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 50px 500px;
+        grid-template-rows: 100px 500px;
         grid-gap: 30px;
         margin: auto;
         width: 80%;
@@ -352,14 +443,43 @@ footer > div > h1 {
         height: 500px;
     }
 
+    #work > p {
+        width: 50%;
+        padding-left: 20px;
+        font-size: 1.5em;
+        color: rgb(88, 88, 88);
+    }
+
+    button {
+        height: 50px;
+        width: 150px;
+        font-size: 1.1em;
+        margin-left: 20px;
+    }
+
     .flinks {
         display: inline-block;
         margin-left: 20%;
+        margin-bottom: 30px;
     }
 
     .flinks > * {
         display: block;
+        color: rgb(53, 221, 207);
+        font-size: 1.2em;
     }
+
+    footer > div > h1 {
+        font-size: 5em;
+        padding-top: 50px;
+        margin-bottom: 0px;
+    }
+
+    footer > div > h2 {
+        margin-top: 0;
+        padding-left: 20px;
+    }
+    
   }
 
   @media screen and (min-width: 1025px) {
@@ -611,10 +731,18 @@ footer > div > h1 {
     .flinks {
         display: flex;
         flex-direction: column;
+        padding-top: 50px;
+        color: rgb(53, 221, 207);
     }
 
     footer > div > h1 {
         font-size: 3.5em;
+        margin-top: 30px;
+        margin-bottom: 0px;
+    }
+
+    footer > div > h2 {
+        margin-top: 0;
     }
 
   }
