@@ -114,7 +114,7 @@ footer > div > h1 {
     font-family: 'Wendy One', sans-serif;
 }
 
-@media screen and (max-width: 737px) {
+@media screen and (max-width: 480px) {
     header {
         height: 50px;
     }
@@ -131,12 +131,24 @@ footer > div > h1 {
         font-size: 15px;
     }
 
+    #title > h1 {
+        font-size: 3em;
+        margin-bottom: 0;
+    }
+
+    #title > h2 {
+        font-size: 1.2em;
+        color: rgb(88, 88, 88);
+        margin-top: 0;
+    }
+
     .menuitem1 {
         visibility: hidden;
     }
 
     .menuitem2 {
         visibility: visible;
+        float: left;
     }
 
     #mainartcontainer {
@@ -145,19 +157,52 @@ footer > div > h1 {
     }
 
     .mainarticles {
-        height: 200px;
-        flex: 0 0 200px;
+        height: 250px;
+        flex: 0 0 250px;
         margin: 0 5px;
+        font-size: 1.2em;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    .mainarticles > p {
+        position: relative;
+        top: 130px;
     }
 
     .tickets {
         width: 95%;
         margin: 5px 2.5%;
         height: 150px;
+        text-align: center;
     }
 
-    #popular {
+    .tickets > p {
+        font-size: 1.3em;
+        font-weight: 700;
+        position: relative;
+        top: 30px;
+    }
+
+    #popular > h3 {
+        font-size: 1.7em;
+        color: rgb(88, 88, 88);
+        padding-top: 30px;
+        font-weight: 600;
         text-align: center;
+    }
+
+    #popcontainer > h4 {
+        font-weight: 600;
+        font-size: 1em;
+        margin-left: 40px;
+        margin-right: 30px;
+    }
+
+    span {
+        color: rgb(173, 10, 138);
+        font-size: 2em;
+        padding-right: 20px;
     }
 
     #latest {
@@ -168,10 +213,17 @@ footer > div > h1 {
         height: 100px;
         width: 90%;
         margin: 5px 5%;
+        font-size: 1em;
+        font-weight: 600;
+    }
+
+    .stories > p {
+        padding: 30px 50px;
     }
 
     #explore {
         text-align: center;
+        height: 380px;
     }
 
     #explorecontainer {
@@ -180,14 +232,34 @@ footer > div > h1 {
     }
 
     .exploreitem {
-        height: 200px;
+        height: 250px;
         flex: 0 0 200px;
         margin: 0 5px;
     }
 
     #newsletter {
-        height: 300px;
+        height: 350px;
         text-align: center;
+    }
+
+    #newsletter > h1 {
+        font-size: 1.4em;
+        padding-top: 50px;
+        padding-left: 70px;
+        padding-right: 70px;
+    }
+
+    #newsletter > p {
+        font-size: 1.1em;
+        padding: 0 50px;
+    }
+
+    input {
+        width: 60%;
+        border-radius: 5px;
+        border: none;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        height: 50px;
     }
 
     #grootvideo {
@@ -198,6 +270,7 @@ footer > div > h1 {
         height: 180px;
         display: flex;
         overflow: scroll;
+        margin-top: 20px;
     }
 
     .video {
@@ -207,19 +280,40 @@ footer > div > h1 {
 
     #work {
         height: 500px;
+        text-align: center;
+    }
+
+    #work > p {
+        padding: 0 20px;
+        font-size: 1.2em;
+        color: rgb(88, 88, 88);
     }
 
     .flinks {
         display: inline-block;
         margin-left: 20%;
+        color: rgb(53, 221, 207);
+        font-size: 1.1em;
     }
 
     .flinks > * {
         display: block;
     }
+
+    footer > div > h1 {
+        font-size: 3.5em;
+        padding-top: 20px;
+        margin-bottom: 0px;
+    }
+
+    footer > div > h2 {
+        margin-top: 0;
+        padding-left: 20px;
+        font-size: 1.5em;
+    }
   }
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (min-width: 481px) and (max-width: 1024px) {
     header {
         height: 50px;
     }
